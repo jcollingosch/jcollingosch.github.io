@@ -14,7 +14,7 @@ var bio = {
 			 "SQL",
 			 "Machine Learning",
 			 "Statistics"],
-	biopic: "images/Profile.jpeg",
+	biopic: "images/Profile.jpg",
 	display: function() {
 		//display name & role
 		var formattedName = HTMLheaderName.replace("%data%", bio.name);
@@ -22,13 +22,23 @@ var bio = {
 		$("#header").prepend(formattedName, formattedRole);
 
 		//display contacts
-		for(c in bio.contacts){
-			var formattedContact = HTMLcontactGeneric.replace("%contact%", c);
-			$("#topContacts").append(formattedContact);
-		}
+		var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
+		$("#topContacts").append(formattedMobile);
+
+		var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+		$("#topContacts").append(formattedEmail);
+
+		var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+		$("#topContacts").append(formattedTwitter);
+
+		var formattedGitHub = HTMLgithub.replace("%data%", bio.contacts.github);
+		$("#topContacts").append(formattedGitHub);
+
+		var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+		$("#topContacts").append(formattedLocation);
 
 		//display bio pic
-		var formattedPic = HTMLbioPic.replace("$data%", bio.biopic);
+		var formattedPic = HTMLbioPic.replace("%data%", bio.biopic);
 		$("#header").append(formattedPic);
 
 		//display welcome
@@ -36,9 +46,9 @@ var bio = {
 		$("#header").append(formattedWelcome);
 
 		//display skills
-		$("header").appedn(HTMLskillsStart);
+		$("#header").append(HTMLskillsStart);
 		for(skill in bio.skills){
-			var formattedSkill = HTMLskills.replace("%data%", skill);
+			var formattedSkill = HTMLskills.replace("%data%", bio.skills[skill]);
 			$("#skills").append(formattedSkill);
 		}
 	}
