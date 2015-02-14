@@ -69,7 +69,7 @@ var education = {
 		{
 			title: "Machine Learnin",
 			school: "Coursera",
-			date: "2013"
+			date: "2013",
 			url: "https://www.coursera.org/course/ml"
 		}
 	],
