@@ -7,9 +7,9 @@ var bio = {
 				email: "jcollingosch@gmail.com",
 				github: "jcollingosch",
 				twitter: "@jcollingosch",
-				location: "Phoenix, AZ",
+				location: "Phoenix, AZ"
 			},
-	welcomeMessage: "",
+	welcomeMessage: "temp welcome message",
 	skills: ["R",
 			 "SQL",
 			 "Machine Learning",
@@ -84,14 +84,14 @@ var work = {
 			employer: "PayPal", 
 	     	title: "Quantitative Analyst", 
 	     	location: "Scottsdale, AZ", 
-	     	dates: "Oct '14 - Feb '15"
+	     	dates: "Oct '14 - Feb '15",
 	     	description: "job description"
 		},
 		{
 			employer: "DriveTime", 
 	     	title: "Quantitative Analyst", 
 	     	location: "Phoenix, AZ", 
-	     	dates: "May '13 - Oct '14"
+	     	dates: "May '13 - Oct '14",
 	     	description: "job description"
 		}
 	],
