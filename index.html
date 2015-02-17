@@ -1,66 +1,166 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <link href="css/style.css" rel="stylesheet" type="text/css"></link>
-  <script src="js/jQuery.js"></script>
-  <script src="js/helper.js"></script>
+  <title>J. Collin Gosch</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="js/typed.js"></script>
+  <script>
+	  $(function(){
+	        $("#typed1").typed({
+	            strings: ["> Data "],
+	            typeSpeed: 0,
+	            callback: function() {
+	              showThis();
+	            },
+	          
+	        });
+	   
+	     function showThis(){
 
-  <!--
-  Uncomment the <script> tag below when you're ready to add an interactive
-  Google Map to your resume!
-  -->
-  <!-- <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> -->
+	        $("#typed2").typed({
+	              strings: ["Analyst", "Scientist", "Enthusiast!"],
+	              backDelay: 1500,    
+	              typeSpeed: 100,
+	              backSpeed: 100,
+	              loop: false,
+	              
+	          });
 
-  <meta name="viewport" content="width=device-width">
-</head>
-<body unresolved>
-  <div id="main">
-    <div id="header" class="center-content clearfix">
-      <ul id="topContacts" class='flex-box'></ul>
-    </div>
-    <div style='clear: both;'></div>
-    <div id="workExperience" class='gray'>
-      <h2>Work Experience</h2>
-    </div>
-    <div id="projects">
-      <h2>Projects</h2>
-    </div>
-    <div id="education" class='gray'>
-      <h2>Education</h2>
-    </div>
-    <div id="mapDiv">
-      <h2>Where I've Lived and Worked</h2>
-    </div>
-    <div id="letsConnect" class='dark-gray'>
-      <h2 class='orange center-text'>Let's Connect</h2>
-      <ul id="footerContacts" class="flex-box">
-      </ul>
-    </div>
-  </div>
-
-  <script src="js/resumeBuilder.js"></script>
-
-  <script type="text/javascript">
-
-  if(document.getElementsByClassName("flex-item").length === 0) {
-    document.getElementById("topContacts").style.display = "none";
-  }
-  if(document.getElementsByTagName("h1").length === 0) {
-    document.getElementById("header").style.display = "none";
-  }
-  if(document.getElementsByClassName("work-entry").length === 0) {
-    document.getElementById("workExperience").style.display = "none";
-  }
-  if(document.getElementsByClassName("project-entry").length === 0) {
-    document.getElementById("projects").style.display = "none";
-  }
-  if(document.getElementsByClassName("education-entry").length === 0) {
-    document.getElementById("education").style.display = "none";
-  }
-  if(document.getElementsByClassName("flex-item").length === 0) {
-    document.getElementById("letsConnect").style.display = "none";
-  }
-  if(document.getElementById("map") == undefined) {
-    document.getElementById("mapDiv").style.display = "none";
-  }
+	      }
+	   });
   </script>
+</head>
+<body>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span> 
+	      </button>
+	      <a class="navbar-brand" href="#">J. Collin Gosch</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav">
+	        <li><a href="#portfolio">Portfolio</a></li>
+	        <li><a href="#about">About</a></li> 
+	        <li><a href="#contact">Contact</a></li> 
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+	  
+	<div class="jumbotron">
+		<div class="container-fluid">
+			<div class="row">
+				<!--
+				<div class="col-md-2">
+					<img src="images/Profile.jpg" class="img-circle" alt="Profile Pic" width="200" height="230">
+				
+				</div>-->
+				<div class="col-md-12">
+				    <h1>Hi, I'm Collin.</h1>      
+				    <h3><span id="typed1"></span><span id="typed2"></span></h3> 
+				</div>
+			</div>     
+	  	</div>
+	</div>
+
+	<div class="container-fluid">
+		<section id="portfolio">
+			<div class="page-header">
+		  		<h1>Portfolio</h1>
+	  		</div>
+	  		<div class="row">
+	  			<div class="col-md-4">
+	  				<h3>Coursera Data Science Track</h3>
+	  				<div class="list-group">
+					  <a href="#" class="list-group-item">
+					  	<h4 class="list-group-item-heading">List group item heading</h4>
+					  	<p class="list-group-item-text">...</p>
+					  </a>
+					  <a href="#" class="list-group-item">
+					  	<h4 class="list-group-item-heading">List group item heading</h4>
+					  	<p class="list-group-item-text">...</p>
+					  </a>
+					  <a href="#" class="list-group-item">
+					  	<h4 class="list-group-item-heading">List group item heading</h4>
+					  	<p class="list-group-item-text">...</p>
+					  </a>
+					</div>
+	  			</div>
+	  			<div class="col-md-4">
+	  				<h3>Udacity Projects</h3>
+	  				<div class="list-group">
+					  <a href="#" class="list-group-item">
+					  	<h4 class="list-group-item-heading">List group item heading</h4>
+					  	<p class="list-group-item-text">...</p>
+					  </a>
+					  <a href="#" class="list-group-item">
+					  	<h4 class="list-group-item-heading">List group item heading</h4>
+					  	<p class="list-group-item-text">...</p>
+					  </a>
+					  <a href="#" class="list-group-item">
+					  	<h4 class="list-group-item-heading">List group item heading</h4>
+					  	<p class="list-group-item-text">...</p>
+					  </a>
+					</div>
+				</div>
+	  			<div class="col-md-4">
+	  				<h3>Other Samples</h3>
+	  				<div class="list-group">
+					  <a href="#" class="list-group-item"> 
+					  	<h4 class="list-group-item-heading">List group item heading</h4>
+					  	<p class="list-group-item-text">...</p>
+					  </a>
+					  <a href="#" class="list-group-item"> 
+					  	<h4 class="list-group-item-heading">List group item heading</h4>
+					  	<p class="list-group-item-text">...</p>
+					  </a>
+					  <a href="#" class="list-group-item">
+					  	<h4 class="list-group-item-heading">List group item heading</h4>
+					  	<p class="list-group-item-text">...</p>
+					  </a>
+					</div>
+				</div>
+	  		</div>
+		</section>
+
+		<section id="about">
+			<div class="page-header">
+		  		<h1>About</h1>
+		  		<p>During school I learned to use quantitative methods to solve problems. My education has given me the opportunity to learn several important things including finding insights from both observational and experimental data.  Several classes including Design of Experiments, Statistical Quality Control, Response Surface Methodologies, Regression Analysis, Stat Learning for Data Mining, and Time Series Forecasting, have given me a solid foundation for using data to answer questions.</p>
+
+				<p>In terms of technical tools I have fairly broad experience. At my first job out of school I used mostly R, SQL, and Excel. I became a much better R programmer throughout that time and feel confident in my ability to clean, model, and visualize data. I also had great experience learning to navigate enterprise databases using SQL. I truly learned how important attention to detail is. At PayPal I have continued to 
+				use SQL to pull and aggregate data and Tableau for visualization. I have completed a MOOC from Coursera where I used MATLAB for the homework assignments. Finally, I have spent many hours playing with and studying various IPython notebooks. Though I haven’t used Python in a work setting yet, I have 
+				loved watching and reading tutorials from conferences about Machine Learning with scikit-learn and data munging with pandas.</p>
+
+				<p>Lastly, I just want to say that I LOVE learning. I think platforms like Coursera, edX, and Udacity are just amazing! I had such a fun time taking Andrew Ng’s Machine Learning class and Statistical Learning from Rob Tibshirani and Trevor Hastie.  I hope to continue taking such courses and never stop learning. I feel 
+				like I am a quick learner and not afraid of learning new things.</p>
+			</div>
+		</section>
+
+		<section id="contact">
+			<div class="page-header">
+		  		<h1>Contact</h1>
+	  		</div>
+	  		<ul class="list-inline">
+	  			<li><a href="https://www.linkedin.com/pub/john-collin-gosch/25/827/871/en"><i class="fa fw fa-4x fa-linkedin"></a></i></li>
+	  			<li><a href="https://twitter.com/jcollingosch"><i class="fa fw fa-4x fa-twitter"></i></a></li>
+	  			<li><a href="https://github.com/jcollingosch"><i class="fa fw fa-4x fa-github"></i></a></li>
+	  			<li><a href="mailto:email.jcollingosch@gmail.com"><i class="fa fw fa-4x fa-envelope-o"></i>&nbsp; <span id="email">jcollingosch@gmail.com</span></a></li>
+	  		</ul>
+		</section>
+	</div>
+
+
 </body>
+</html>
